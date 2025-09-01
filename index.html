@@ -42,6 +42,27 @@
                 transform: scale(1);
             }
         }
+        .yellow-button {
+            background-color: #FFD700;
+            color: #333;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+        }
+        .yellow-button:hover {
+            background-color: #FFC700;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+        }
+        .yellow-button:active {
+            transform: translateY(0px);
+        }
     </style>
 </head>
 <body>
@@ -49,6 +70,12 @@
         <h1>Hello, World! 👋</h1>
         <p>Welcome to my first GitHub page!</p>
         <p>Created with ❤️ using GitHub MCP tools</p>
+        <button class="yellow-button" onclick="buttonClick()">Click Me!</button>
     </div>
+    <script>
+    function buttonClick() {
+        alert("Hello from the yellow button! 🟡");
+    }
+    </script>
 </body>
 </html>
